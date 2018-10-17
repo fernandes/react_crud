@@ -16,4 +16,6 @@ class ApplicationSystemTestCase < ActionDispatch::SystemTestCase
   if ENV['CHROME_DRIVER_PATH']
     Selenium::WebDriver::Chrome.driver_path=ENV['CHROME_DRIVER_PATH']
   end
+
+  Rails.application.eager_load!
 end
