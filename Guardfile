@@ -21,6 +21,9 @@ Open3.popen3("gem contents bundler") do |i, o|
   Kernel.system("gem install bundler --pre", out: File::NULL) if o.read.empty?
 end
 
+ENV['COVERAGE'] = 'true'
+ENV['RAILS_ENV'] = 'test'
+
 guard :bundler do
   require 'guard/bundler'
   require 'guard/bundler/verify'
@@ -33,7 +36,7 @@ guard :bundler do
   files.each { |file| watch(helper.real_path(file)) }
 end
 
-guard :minitest, all_on_start: false, spring: "bundle exec spring rails test", bundler: false do
+guard :minitest, all_on_start: false, spring: 'COVERAGE=true bin/rails test' do
   # with Minitest::Unit
   watch(%r{^test/(.*)\/?test_(.*)\.rb$})
   watch(%r{^lib/(.*/)?([^/]+)\.rb$})     { |m| "test/#{m[1]}test_#{m[2]}.rb" }

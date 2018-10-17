@@ -8,6 +8,9 @@
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
   },
+  "scripts": {
+    "test": "echo \"Coming Soon\""
+  },
   "devDependencies": {
     "webpack-dev-server": "2.11.2"
   }

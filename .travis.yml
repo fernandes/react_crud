@@ -29,6 +29,7 @@ env:
   global:
   - PGPORT=5433
   - CHROME_HEADLESS=true CHROME_DRIVER_PATH=/tmp/chromedriver
+  - COVERAGE=true
 before_script:
   - psql -c 'create database react_crud_test;' -U travis
   - yarn
