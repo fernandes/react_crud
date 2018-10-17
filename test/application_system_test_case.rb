@@ -1,3 +1,4 @@
+ENV['RAILS_SYSTEM_TEST'] = 'true'
 require "test_helper"
 
 class ApplicationSystemTestCase < ActionDispatch::SystemTestCase

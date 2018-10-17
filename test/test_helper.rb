@@ -5,7 +5,7 @@ if ENV['COVERAGE'] == 'true'
   SimpleCov.start :rails do
     add_filter "/bin/"
   end
-  Rails.application.eager_load!
+  Rails.application.eager_load! unless ENV['RAILS_SYSTEM_TEST']
 end
 
 require_relative '../config/environment'
