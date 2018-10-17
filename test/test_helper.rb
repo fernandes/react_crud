@@ -1,7 +1,5 @@
 ENV['RAILS_ENV'] ||= 'test'
 
-puts "test helper #{ENV['COVERAGE']}"
-
 if ENV['COVERAGE'] == 'true'
   require 'simplecov'
   SimpleCov.start :rails do

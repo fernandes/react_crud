@@ -5,8 +5,6 @@ env = ENV['RAILS_ENV'] || "development"
 
 coverage = env == 'test' || ENV['COVERAGE'] == 'true' ? true : false
 
-puts "coverage: #{coverage}"
-
 if coverage
   ENV['COVERAGE'] = 'true'
   require 'simplecov'
