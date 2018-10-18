@@ -12,12 +12,12 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  number: MyString
-  label: MyString
-  contact: one
+mary:
+  number: +1 11 1111-1111
+  label: mobile
+  contact: mary
 
-two:
-  number: MyString
-  label: MyString
-  contact: two
+joao:
+  number: +2 11 1111-1111
+  label: home
+  contact: joao
