@@ -31,6 +31,7 @@ env:
   - CHROME_HEADLESS=true CHROME_DRIVER_PATH=/tmp/chromedriver
   - COVERAGE=true
   - CC_TEST_REPORTER_ID=f6b1339bb213fe28767691f926eec31145b3849cac8ef209c838f5de1b940c68
+  - DISABLE_SPRING=true
 before_script:
   - psql -c 'create database react_crud_test;' -U travis
   - yarn
