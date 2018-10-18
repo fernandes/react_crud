@@ -4,3 +4,10 @@
 require_relative 'config/application'
 
 Rails.application.load_tasks
+
+Rake::TestTask.new("test:all") do |t|
+  t.libs << 'test'
+  t.pattern = ["test/**/*_test.rb"]
+  t.warning = false
+  t.verbose = false
+end
