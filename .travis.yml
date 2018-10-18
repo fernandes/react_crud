@@ -41,6 +41,6 @@ before_script:
   - ./cc-test-reporter before-build
 script:
   - bin/yarn test
-  - rake test:all
+  - bundle exec rake test:all
 after_script:
   - ./cc-test-reporter after-build --exit-code $TRAVIS_TEST_RESULT
