@@ -5,7 +5,10 @@ if ENV['COVERAGE'] == 'true'
   SimpleCov.start :rails do
     add_filter "/bin/"
   end
-  Rails.application.eager_load! unless ENV['RAILS_SYSTEM_TEST']
+
+  if ENV['DISABLE_SPRING'].nil? && ENV['RAILS_SYSTEM_TEST'].nil?
+    Rails.application.eager_load!
+  end
 end
 
 require_relative '../config/environment'
