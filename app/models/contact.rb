@@ -10,4 +10,6 @@
 #
 
 class Contact < ApplicationRecord
+  has_one :address, dependent: :destroy
+  has_many :telephones, dependent: :destroy
 end

@@ -15,18 +15,18 @@
 
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
-one:
-  street_address: MyString
-  neighborhood: MyString
-  city: MyString
-  state: MyString
-  country: MyString
-  contact: one
+mary:
+  street_address: 1 Mary Ave
+  neighborhood: Mary Hood
+  city: Maryland
+  state: MR
+  country: MR
+  contact: mary
 
-two:
-  street_address: MyString
-  neighborhood: MyString
-  city: MyString
-  state: MyString
-  country: MyString
-  contact: two
+joao:
+  street_address: 1 Joao St
+  neighborhood: Joao Hood
+  city: Joaoland
+  state: JO
+  country: JO
+  contact: joao
