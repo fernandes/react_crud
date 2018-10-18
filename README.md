@@ -1,24 +1,18 @@
-# README
+# React CRUD
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Code Coverage
 
-Things you may want to cover:
+To the exact code coverage, you can bypass spring and run code coverage with following command:
 
-* Ruby version
+```bash
+COVERAGE=true DISABLE_SPRING=true bundle exec rake test:all
+```
 
-* System dependencies
+This will run both unit and system tests
 
-* Configuration
+Instead of this rake task, we still have two options:
 
-* Database creation
+* rails test
+* rails test:system
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Don't forget the bundle exec 😉
