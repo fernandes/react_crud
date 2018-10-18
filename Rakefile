@@ -5,7 +5,7 @@ require_relative 'config/application'
 
 Rails.application.load_tasks
 
-require 'rake/test_task'
+require 'rake/testtask'
 
 Rake::TestTask.new("test:all") do |t|
   t.libs << 'test'
