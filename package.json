@@ -3,6 +3,7 @@
   "private": true,
   "dependencies": {
     "@rails/webpacker": "3.5",
+    "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
@@ -12,6 +13,7 @@
     "test": "echo \"Coming Soon\""
   },
   "devDependencies": {
+    "jest": "^23.6.0",
     "webpack-dev-server": "2.11.2"
   }
 }
