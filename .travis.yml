@@ -34,7 +34,7 @@ env:
   - DISABLE_SPRING=true
 before_script:
   - psql -c 'create database react_crud_test;' -U travis
-  - nvm update --lts node
+  - nvm install --lts node
   - yarn
   - RAILS_ENV=test NODE_ENV=test bundle exec rails webpacker:compile
   - curl -L https://codeclimate.com/downloads/test-reporter/test-reporter-latest-linux-amd64 > ./cc-test-reporter
