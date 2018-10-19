@@ -1,6 +1,9 @@
 {
   "name": "react_crud",
   "private": true,
+  "scripts": {
+    "test": "jest"
+  },
   "dependencies": {
     "@rails/webpacker": "3.5",
     "babel-preset-env": "^1.7.0",
@@ -8,9 +11,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
-  },
-  "scripts": {
-    "test": "echo \"Coming Soon\""
   },
   "devDependencies": {
     "jest": "^23.6.0",
