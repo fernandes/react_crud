@@ -1,6 +1,11 @@
 {
   "name": "react_crud",
   "private": true,
+  "scripts": {
+    "format": "eslint --fix 'app/javascript/**/*.{js,jsx}'",
+    "lint": "eslint 'app/javascript/**/*.{js,jsx}'",
+    "test": "jest"
+  },
   "dependencies": {
     "@rails/webpacker": "3.5",
     "babel-preset-env": "^1.7.0",
@@ -8,11 +13,6 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
-  },
-  "scripts": {
-    "format": "eslint --fix 'app/javascript/**/*.{js,jsx}'",
-    "lint": "eslint 'app/javascript/**/*.{js,jsx}'",
-    "test": "echo \"Coming Soon\""
   },
   "devDependencies": {
     "babel-eslint": "^10.0.1",
