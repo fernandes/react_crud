@@ -9,7 +9,7 @@ describe('Dumb Counter component', () => {
 
   describe('state', () => {
     it('accepts an initial counter value as props', () => {
-      const wrapper = mount(<Counter initialValue={1} />)
+      wrapper = mount(<Counter initialValue={1} />)
 
       expect(wrapper).toHaveState('counter', 1)
     })
