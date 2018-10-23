@@ -2858,6 +2858,11 @@ eslint-config-airbnb@^17.1.0:
     object.assign "^4.1.0"
     object.entries "^1.0.4"
 
+eslint-config-jest-enzyme@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.yarnpkg.com/eslint-config-jest-enzyme/-/eslint-config-jest-enzyme-7.0.0.tgz#9d9358f2694261f10e659db8afdb40a2f3e6b156"
+  integrity sha512-NqkUWmSGlJtCGFV9Othsk+32z0smny85nC1I6WaoOPD572GLltSojt5oob78vClfJVVjNgXfsmfTtGizm03Wcg==
+
 eslint-config-prettier@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/eslint-config-prettier/-/eslint-config-prettier-3.1.0.tgz#2c26d2cdcfa3a05f0642cd7e6e4ef3316cdabfa2"
