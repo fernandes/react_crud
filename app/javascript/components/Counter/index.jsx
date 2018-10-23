@@ -21,7 +21,9 @@ class Counter extends Component {
     return (
       <Fragment>
         <button id="decrement" type="button" onClick={this.decrement} />
-        <p>Current value: {counter}</p>
+        <p>
+          Current value: <span data-test="counter-value">{counter}</span>
+        </p>
         <button id="increment" type="button" onClick={this.increment} />
       </Fragment>
     )
