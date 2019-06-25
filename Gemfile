@@ -39,9 +39,11 @@ gem 'jbuilder', '~> 2.5'
 gem 'bootsnap', '>= 1.1.0', require: false
 
 gem 'devise'
+gem 'multi_json'
 gem 'reform-rails', github: 'trailblazer/reform-rails'
 gem 'reform', github: 'fernandes/reform', branch: 'feature/indexed_errors'
 gem 'trailblazer-endpoint', github: 'trailblazer/trailblazer-endpoint'
+gem 'trailblazer', github: 'trailblazer/trailblazer'
 gem 'trailblazer-rails'
 
 group :development, :test do

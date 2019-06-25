@@ -13,7 +13,7 @@ module Api
         match:   ->(result) { result.success? },
         resolve: ->(result) { result }),
       created: Dry::Matcher::Case.new(
-        match:   ->(result) { result.success? && result["model.action"] == :new }, # the "model.action" doesn't mean you need Model.
+        match:   ->(result) { result.success? && result[:model].try(:persisted?) }, # the "model.action" doesn't mean you need Model.
         resolve: ->(result) { result }),
       not_found: Dry::Matcher::Case.new(
         match:   ->(result) { result.failure? && result[:model].nil? },
